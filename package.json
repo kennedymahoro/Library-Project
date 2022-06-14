@@ -1,0 +1,23 @@
+{
+  "name": "library-project",
+  "version": "1.0.0",
+  "description": "complicated",
+  "main": "main.ts",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennedymahoro/Library-Project.git"
+  },
+  "keywords": [
+    "Library",
+    "project"
+  ],
+  "author": "kennedy mahoro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kennedymahoro/Library-Project/issues"
+  },
+  "homepage": "https://github.com/kennedymahoro/Library-Project#readme"
+}
