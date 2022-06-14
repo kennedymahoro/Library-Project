@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    padding: 5px;
+}
+.content{
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    border-style: double;
+    border-color:black;
+    padding: .5rem;
+}
+#inputTxt{
+    width: 18vw;
+    border-style: solid;
+    padding-left: 3px;
+    border-color: black;
+    margin-top: 1px;
+    border-radius: 8px;
+}
+input::placeholder{
+    color: grey;
+}
+#enterBTN{
+    width: 18vw;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+.checkboxCont{
+    width: 18vw;
+}
