@@ -6,18 +6,17 @@ const Input_Page:HTMLInputElement = document.querySelector("data-inputPage") as 
 const Input_Read_Checkbox:HTMLInputElement = document.querySelector("data-checkbox") as HTMLInputElement;
 const EnterBtn:HTMLButtonElement = document.querySelector("data-enterBTN") as HTMLButtonElement;
 class NewElement{
-    Author:string;
-    Book:string;
-    Page:number;
-    Read:string;
-
-    constructor(){
-        this.Author;
-        this.Book;
-        this.Read;
-        this.Page;
+    Author:string
+    Book:string
+    Read:string
+    Page:number
+    constructor(Author:string,Book:string,Read:string,Page:number){
+        this.Author = Author;
+        this.Book = Book;
+        this.Read = Read;
+        this.Page = Page;
     }
-    GetElement(Author,Book,Page,Read):string{
+    GetElement():string{
         return
         `<div class="CreatedElement" data-createdElement>
             <div class="CE_Author" data-CEAuthor>${this.Author}</div>
@@ -31,12 +30,14 @@ class NewElement{
 }
 
 EnterBtn.addEventListener('click',():void=>{
+    alert("Hello")
     const BookValue:string = Input_Book.value;
     const AuthorValue:string = Input_Author.value;
     const PageValue:number = Number(Input_Page.value);
     const ReadValue:string = Input_Read_Checkbox.value;
 
-    const CreatedElement = new NewElement();
+    const CreatedElement = new NewElement(AuthorValue,BookValue,ReadValue,PageValue);
     //CreatedElement.GetElement(AuthorValue,BookValue,PageValue,ReadValue)
-    Main_Content.innerHTML = CreatedElement.GetElement(AuthorValue,BookValue,PageValue,ReadValue);
+    //Main_Content.innerHTML = CreatedElement.GetElement()
+    alert(CreatedElement.GetElement())
 })
